@@ -174,10 +174,10 @@ export default class Patientlist extends Component {
             <div className="card" >
                 <div className="card-body " >
                   <div className='row'>
-                    <div className='col-8' style={{textAlign : "left"}}>
+                    <div className='col-7' style={{textAlign : "left"}}>
                         <p><b>File/Documents </b></p>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-5'>
                         <p style={{fontSize:"15px" , color :"blue" }} ><span><i  className="fa">&#xf0f6;</i> &nbsp;&nbsp;</span> Add Files </p>
                     </div>
                   </div> 
