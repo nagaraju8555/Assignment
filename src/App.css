@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+
+.menutitle
+{
+  font-size: vw;
+  text-align: center;
+  color  : #2a5e6c ;
+  text-decoration: none;
+}
+
+p a.menutitle :hover{
+  text-decoration: none;
+  color  : #2a5e6c ;
+}
+.navigation_text
+{
+  /* text-decoration: none; */
+  font-size: 1vw;
+  color: #2a5e6c;
+  /* padding-top: 0.4vh; */
+  /* padding-bottom: 0.6vh; */
+  /* background-color: green; */
+  /* transition: transform .2s; */
+  text-decoration: none;
+  width: 20%;
+  margin: 0 auto;
+  padding:auto;
+}
+
+/* .navigation_text :hover{
+  color: red ;
+
+}
+
+a.navigation_text:hover{
+    text-decoration: none;
+} */
+.underline{
+  border : 0.5px solid #faf9f7 ;
+   margin-right : 40px ;
+  }
+.patientinfo{
+  font-weight: bold;
+  color :grey;
+  
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #4d79ff;
+  background-color: #fff;
+}
+
+.css-v6mo1y-MuiTimelineDot-root {
+background-color: #4d79ff !important;
+}
+.css-1ami7lv-MuiTimelineConnector-root {
+  background-color:#dc3545 !important;
+}

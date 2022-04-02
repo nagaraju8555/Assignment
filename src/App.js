@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import Navigation from './Navigation';
+import Overview from './Components/Overview';
+import Calendar from './Components/Calendar';
+import Patientlist from './Components/Patientlist';
+import Messages from "./Components/Messages";
+import Payment  from './Components/Payment';
+import Settings from './Components/Settings';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Router>
+       <div className="row mx-0">
+         <div style={{ width: "20%" }}>
+          <Navigation />
+         </div>
+          
+          <Switch>
+            <Route exact path="/" component={Overview} />
+            <Route exact path="/calendar" component={Calendar} />
+            <Route exact path="/patientlist" component={Patientlist} />
+            <Route exact path="/messages" component={Messages} />
+            <Route exact path="/payment" component={Payment} />
+            <Route exact path="/settings" component={Settings} />
+          </Switch>
+        </div>
+       </Router>
+     
     </div>
   );
 }
