@@ -151,7 +151,7 @@ export default class Patientlist extends Component {
                   <div className="card-body " >
                       <p style={{textAlign : "left"}}><b>Notes</b></p>
                       <div className='p-2' style={{backgroundColor: "#f2f2f2", textAlign : "left"}}>
-                          <p><span>-</span> This patient is lorem ipsum dolor it amet</p>
+                          <p><span>-</span> This patient is lorem ipsum dolor</p>
                           <p><span>-</span> Lorem ipsum dolor it amet</p>
                           <p><span>-</span> Has alirgic history with Cataflam</p>
                           <div className='pb-1' >
@@ -192,7 +192,7 @@ export default class Patientlist extends Component {
                           <div className='col-9'>
                             {item}
                           </div>
-                          <div className='col-2'>
+                          <div className='col-1'>
                           <i style={{ fontSize:"24px"}} className="fa">&#xf01a;</i>
                           </div>
                         </div>
